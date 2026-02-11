@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="so">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baro 5-ta Project ee JS</title>
+  <link rel="stylesheet" href="jasc.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">JS<span>5-project</span></div>
+    <nav>
+      <ul>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#apply">Is-diwaangeli</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Madooneysa inaad dhistid project</h1>
+    <p>baro projectiyada laga heli karo js</p>
+    <a href="#apply" class="btn-main">Codso Hadda</a>
+  </section>
+
+  <section id="projects" class="project-grid">
+    <h2>5-ta Project ee aad baranayso</h2>
+    <div class="container" id="project-list"></div>
+  </section>
+
+  <section id="apply" class="form-section">
+    <div class="form-container">
+      <h2>Foomka Is-diwaangelinta</h2>
+      <form id="orderForm">
+        <div class="input-group">
+          <label>Magacaaga (Xarfo kaliya)</label>
+          <input type="text" id="name" placeholder="Magacaaga oo buuxa" required>
+        </div>
+
+        <div class="input-group">
+          <label>Taleefanka (Lambar kaliya)</label>
+          <input type="text" id="phone" placeholder="Tusaale: 061XXXXXXX" required>
+        </div>
+
+        <div class="input-group">
+          <label>Email-kaaga</label>
+          <input type="email" id="email" placeholder="Email-kaaga saxda ah" required>
+        </div>
+        
+        <div class="input-group">
+          <label>Dooro Project</label>
+          <select id="projectChoice" required>
+            <option value=""> Dooro Project </option>
+            <option value="To-Do App">1. To-Do List App</option>
+            <option value="Weather App">2. Weather App</option>
+            <option value="Quiz App">3. Quiz App</option>
+            <option value="Currency Converter">4. Currency Converter</option>
+            <option value="Expense Tracker">5. Expense Tracker</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-submit">Soo Dir Codsiga</button>
+      </form>
+
+      <div id="responseMessage"></div>
+    </div>
+  </section>
+
+  <script src="jasc.js"></script>
+</body>
+</html>
